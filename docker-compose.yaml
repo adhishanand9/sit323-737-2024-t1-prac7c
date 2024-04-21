@@ -1,0 +1,18 @@
+version: '3'
+services:
+
+  sample-application:
+    image: adhishanand9/sit737:calculator
+    build: 
+      context: ./
+      dockerfile: dockerfile
+    container_name: calculator
+    ports:
+      - "8080:3040"
+    restart: "no"
+    healthcheck:
+      test: curl --fail http://localhost:8080/add?n1=3&n2=5 || exit 1
+      interval: 60s
+      retries: 5
+      start_period: 20s
+      timeout: 10s

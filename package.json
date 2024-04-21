@@ -1,0 +1,24 @@
+{
+  "name": "sit323-737-2024-t1-prac4p",
+  "version": "1.0.0",
+  "description": "Task 4.1P",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adhishanand9/sit323-737-2024-t1-prac4p.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adhishanand9/sit323-737-2024-t1-prac4p/issues"
+  },
+  "homepage": "https://github.com/adhishanand9/sit323-737-2024-t1-prac4p#readme",
+  "dependencies": {
+    "express": "^4.19.2",
+    "logging": "^3.3.0",
+    "winston": "^3.13.0"
+  }
+}

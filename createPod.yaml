@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: calculatorpod
+  labels:
+    tier: frontend
+spec:
+  containers:
+    - image: adhishanand9/sit737:calculator
+      name: nodewebapp
+      ports:
+        - containerPort: 3040
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always

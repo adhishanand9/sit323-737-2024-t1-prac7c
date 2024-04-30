@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: mydeployment
   labels:
-    app: calculator
+    app: myapp
     tier: frontend
 spec:
   # modify replicas according to your case
@@ -18,6 +18,6 @@ spec:
     spec:
       containers:
         - name: mynode
-          image: adhishanand9/sit737:calculator
+          image: adhishanand/sit737:calculatorservice
           ports:
-            - containerPort: 3040
+            - containerPort: 3070

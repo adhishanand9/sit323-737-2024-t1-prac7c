@@ -8,8 +8,9 @@ spec:
   clusterIP: 10.99.132.221
   externalTrafficPolicy: Cluster
   ports:
-    - name: myport
-      port: 8037
+    - name: http
+      port: 80
       protocol: TCP
-      targetPort: 3040
+      targetPort: 3070
   type: LoadBalancer
+
